@@ -19,3 +19,13 @@ body {
   background-color: #000000;
 
 }
+
+.card.card-primary {
+
+  background-color: gray;
+}
+
+.card {
+
+  color: black;
+}

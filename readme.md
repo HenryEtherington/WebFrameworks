@@ -41,3 +41,6 @@ Then change into the folder the git clone command will create:
 And finally install the dependencies:
 
 `npm install`
+"# test" 
+"#mooReviews" 
+"# MooReviews" 

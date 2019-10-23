@@ -8,22 +8,23 @@ block content
     .row
         .col-12.col-md-8
 
-            .card
-                .card-block
-                    h4
-                        a(href="/location") Starcups
-                        small &nbsp;
-                            i.fa.fa-star
-                            i.fa.fa-star
-                            i.fa.fa-star
-                            i.fa.fa-star-o
-                            i.fa.fa-star-o
-                        span.badge.badge-pill.badge-default.float-right 100m
-                    p.address 125 High Street, Reading, RG6 1PS
-                    .facilities
-                        span.badge.badge-warning Hot drinks
-                        span.badge.badge-warning Food
-                        span.badge.badge-warning Premium wifi
+ each location in locations
+    .card
+        .card-block
+            h4
+                a(href="/location")= location.name
+                small &nbsp;
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star-o
+                    i.fa.fa-star-o
+                span.badge.badge-pill.badge-default.float-right= location.distance
+        p.address= location.address
+        .facilities
+            each facility in location.facilities
+                span.badge.badge-warning= facility
+
             .card
                 .card-block
                     h4
