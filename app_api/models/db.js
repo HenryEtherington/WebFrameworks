@@ -30,6 +30,7 @@ if (process.platform === 'win32'){
     });
     rl.on ('SIGTERM', () => {
         process.emit ("SIGTERM");
+
     });
 }
 
